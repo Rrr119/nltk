@@ -1,0 +1,17 @@
+{
+  "root": "/home/dev/feedback/uid26926",
+  "B": "/home/dev/feedback/uid26926",
+  "sha": "650c0e1221342759fb7252651bd92dc5281f6dea",
+  "wslDistro": "Ubuntu-26.04",
+  "source": {
+    "owner": "nltk",
+    "repo": "nltk",
+    "sha": "650c0e1221342759fb7252651bd92dc5281f6dea"
+  },
+  "fork": {
+    "owner": "Rrr119",
+    "repo": "nltk",
+    "cloneUrl": "https://github.com/Rrr119/nltk.git"
+  },
+  "at": "2026-11-19T16:04:36.193Z"
+}

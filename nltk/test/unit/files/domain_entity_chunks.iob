@@ -1,0 +1,108 @@
+The DT O
+patient NN O
+received VBD O
+metformin NN B-DRUG
+for IN O
+type NN B-DISEASE
+2 CD I-DISEASE
+diabetes NN I-DISEASE
+. . O
+
+Low JJ B-DRUG
+dose NN I-DRUG
+aspirin NN I-DRUG
+was VBD O
+started VBN O
+for IN O
+hypertension NN B-DISEASE
+. . O
+
+Pembrolizumab NNP B-DRUG
+reduced VBD O
+non JJ B-DISEASE
+- : I-DISEASE
+small JJ I-DISEASE
+cell NN I-DISEASE
+lung NN I-DISEASE
+cancer NN I-DISEASE
+growth NN O
+. . O
+
+The DT O
+trial NN O
+enrolled VBD O
+patients NNS O
+with IN O
+chronic JJ B-DISEASE
+kidney NN I-DISEASE
+disease NN I-DISEASE
+. . O
+
+Researchers NNS O
+prescribed VBD O
+ACE NNP B-DRUG
+inhibitors NNS I-DRUG
+to TO O
+diabetic JJ O
+patients NNS O
+. . O
+
+GLP NNP B-DRUG
+- : I-DRUG
+1 CD I-DRUG
+agonists NNS I-DRUG
+improved VBD O
+glycemic JJ O
+control NN O
+in IN O
+type NN B-DISEASE
+2 CD I-DISEASE
+diabetes NN I-DISEASE
+. . O
+
+The DT O
+clinician NN O
+stopped VBD O
+warfarin NN B-DRUG
+after IN O
+gastrointestinal JJ B-DISEASE
+bleeding NN I-DISEASE
+. . O
+
+Imatinib NNP B-DRUG
+is VBZ O
+approved VBN O
+for IN O
+chronic JJ B-DISEASE
+myeloid JJ I-DISEASE
+leukemia NN I-DISEASE
+. . O
+
+Patients NNS O
+on IN O
+statins NNS B-DRUG
+reported VBD O
+muscle NN B-DISEASE
+pain NN I-DISEASE
+. . O
+
+Dupilumab NNP B-DRUG
+treated VBD O
+severe JJ B-DISEASE
+atopic JJ I-DISEASE
+dermatitis NN I-DISEASE
+. . O
+
+No DT O
+adverse JJ O
+events NNS O
+were VBD O
+observed VBN O
+. . O
+
+The DT O
+study NN O
+measured VBD O
+blood NN O
+pressure NN O
+. . O

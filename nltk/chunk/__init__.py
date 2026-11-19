@@ -28,9 +28,11 @@ To convert a chunk structure back to a list of tokens, simply use the
 chunk structure's ``leaves()`` method.
 
 This module defines ``ChunkParserI``, a standard interface for
-chunking texts; and ``RegexpChunkParser``, a regular-expression based
-implementation of that interface. It also defines ``ChunkScore``, a
-utility class for scoring chunk parsers.
+chunking texts; ``RegexpChunkParser``, a regular-expression based
+implementation of that interface; and ``CascadedChunker``, a
+feature-rule implementation for lexical, morphological, and contextual
+evidence. It also defines ``ChunkScore``, a utility class for scoring
+chunk parsers.
 
 RegexpChunkParser
 =================
@@ -76,6 +78,15 @@ simpler types of rules:
       unchunked material on the left.
     - ``ExpandRightRule`` will expand a chunk to incorporate new
       unchunked material on the right.
+
+Feature-based Chunking
+----------------------
+
+``CascadedChunker`` applies ordered stages of ``FeatureChunkRule``
+objects.  Each rule can inspect word, tag, shape, affix, neighbouring
+token, and neighbouring chunk features.  Later stages therefore see the
+chunks produced by earlier stages and can expand or merge them.  See
+``nltk.chunk.feature`` for the feature names and the full API.
 
 Tag Patterns
 ~~~~~~~~~~~~
@@ -153,6 +164,19 @@ zero-length assertions).
 """
 
 from nltk.chunk.api import ChunkParserI
+from nltk.chunk.feature import (
+    CascadeChunker,
+    CascadedChunker,
+    FeatureChunker,
+    FeatureChunkParser,
+    FeatureChunkRule,
+    FeatureChunkStage,
+    FeatureRule,
+    context_features,
+    evaluate_chunkers,
+    extract_features,
+    token_features,
+)
 from nltk.chunk.named_entity import Maxent_NE_Chunker
 from nltk.chunk.regexp import RegexpChunkParser, RegexpParser
 from nltk.chunk.util import (
